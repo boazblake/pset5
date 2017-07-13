@@ -1,0 +1,1 @@
+exports.StArray = require('./starray')

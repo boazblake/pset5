@@ -1,0 +1,9 @@
+{
+  "name": "problems-speller",
+  "version": "1.0.0",
+  "main": "speller.js",
+  "license": "MIT",
+  "dependencies": {
+    "node-stopwatch": "^0.0.1"
+  }
+}
