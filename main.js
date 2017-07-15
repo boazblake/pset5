@@ -19,14 +19,20 @@ const main = DS => {
     throw new Error('Must provide a text file.')
 
 //  time returns an array of results and seconds
+
+//  loadTime :: (_ -> DS, dictPath) -> [results, seconds]
   const [ dict, loadTime ] = time(_=> load(DS, dictPath))
 
+// returns a parsed array of words (no punctuation or empty strings)
   const words = read(textPath)
 
+// Check for misspellingsTime :: (_ -> DS, dict, x) -> [misspellings, checktime]
   const [ misspellings, checkTime ] = time(_ => words.filter(x => !check(DS, dict, x)))
 
+  // sizeTime :: (_ -> ds, dict) -> [ dictLength, sizeTime ]
   const [ dictLength, sizeTime ] = time(_ => size(DS, dict))
 
+// unloadTime :: (_ -> DS, dict) -> [ ___, unloadTime ]
   const [ ___, unloadTime ] = time(_ => unload(DS, dict))
 
   const results =

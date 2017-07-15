@@ -4,6 +4,14 @@
   "main": "speller.js",
   "license": "MIT",
   "dependencies": {
+    "eslint": "^4.2.0",
     "node-stopwatch": "^0.0.1"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-plugin-react": "^7.1.0"
   }
 }

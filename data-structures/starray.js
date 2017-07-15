@@ -1,9 +1,9 @@
 module.exports = class StArray {
-  static cons(x, xs) { 
+  static cons(x, xs) {
     xs.push(x)
     return xs
   }
-  
+
   static append(xs, ys) {
     return Array.isArray(ys) ? xs.concat(ys) : StArray.cons(ys, xs)
   }
