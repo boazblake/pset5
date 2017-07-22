@@ -6,6 +6,7 @@ const { save } = require('./fileWriter')
 const { print } = require('./printer')
 const { StArray } = require('./data-structures')
 const { LinkedList } = require('./data-structures')
+const { Buckets } = require('./data-structures')
 
 const main = DS => {
 // destructering the arguments, throwing away the first two.
@@ -60,4 +61,5 @@ const main = DS => {
 }
 
 // main(StArray)
-main(LinkedList)
+// main(LinkedList)
+main(Buckets)

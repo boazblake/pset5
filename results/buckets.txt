@@ -299,9 +299,9 @@ eBooks
     WORDS MISSPELLED:     295
     WORDS IN DICTIONARY:  143091
     WORDS IN TEXT:        29758
-    TIME IN load:         56ms
-    TIME IN check:        9225ms
+    TIME IN load:         991ms
+    TIME IN check:        9028ms
     TIME IN size:         0ms
     TIME IN unload:       0ms
-    TIME IN TOTAL:        9281ms
+    TIME IN TOTAL:        10019ms
     

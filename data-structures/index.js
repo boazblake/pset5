@@ -1,2 +1,3 @@
 exports.StArray = require('./starray')
-exports.LinkedList = require('./sll')
+exports.LinkedList = require('./linkedlist')
+exports.Buckets = require('./buckets.js')
