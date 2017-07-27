@@ -1,6 +1,17 @@
 module.exports = class Buckets {
-  static cons(i, x, xs) {
-    //console.log('index',i , 'head', x , 'tail', xs)
+  constructor(head, tail) {
+    this.head = head
+    this.tail = tail
+  }
+
+
+  static cons(head, tail) {
+    return new Buckets(head, tail)
+  }
+
+  static add(i, x, xs) {
+    xs.push(x)
+    return xs
   }
 
   static getBucketIndex (word){
@@ -19,11 +30,10 @@ module.exports = class Buckets {
     const bucketIndex = head =>
       Buckets.getBucketIndex(head)
 
-    return Buckets.cons(bucketIndex(head), head, tail)
+    return Buckets.add(bucketIndex(head), head, tail)
   }
 
   static append(xs, ys) {
-    console.log(xs)
     return Array.isArray(ys) ? xs.concat(ys) : Buckets.bucketArray(ys, xs)
   }
 
